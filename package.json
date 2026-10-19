@@ -1,0 +1,21 @@
+{
+  "name": "retail-compliance-scanner",
+  "version": "1.0.0",
+  "description": "Retail shelf price and expiry compliance scanner",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0",
+    "multer": "^2.4.0",
+    "tesseract.js": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

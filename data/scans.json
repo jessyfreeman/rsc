@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1791631880393,
+    "staff_name": "Store Staff",
+    "image": "1791631879416-730927.jpg",
+    "detected_product": {
+      "name": null,
+      "sku": null,
+      "barcode": null,
+      "shelf_price": 7.99,
+      "expiry_date": null
+    },
+    "approved_price": null,
+    "approved_expiry_date": null,
+    "expiry_date_source": "NOT_FOUND",
+    "currency": "UGX",
+    "ocr_text": "— a yOuray | »\n= wm\nN,./ |\n- oS ae 107\n\n5S\n",
+    "price_status": "UNKNOWN",
+    "expiry_status": "UNKNOWN",
+    "status": "UNMATCHED",
+    "message": "Product could not be matched to the product file.",
+    "scan_date": "2026-10-10T11:31:20.393Z"
+  },
+  {
+    "id": 1791631960923,
+    "staff_name": "Store Staff",
+    "image": "1791631960141-642899.jpg",
+    "detected_product": {
+      "name": null,
+      "sku": null,
+      "barcode": null,
+      "shelf_price": 7.99,
+      "expiry_date": null
+    },
+    "approved_price": null,
+    "approved_expiry_date": null,
+    "expiry_date_source": "NOT_FOUND",
+    "currency": "UGX",
+    "ocr_text": "i\nv »\n/f — )\n/\nKING\n",
+    "price_status": "UNKNOWN",
+    "expiry_status": "UNKNOWN",
+    "status": "UNMATCHED",
+    "message": "Product could not be matched to the product file.",
+    "scan_date": "2026-10-10T11:32:40.923Z"
+  }
+]

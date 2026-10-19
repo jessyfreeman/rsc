@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Staff Scanner | Retail Compliance Scanner</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/staff.css">
+    <link rel="stylesheet" href="css/dash.css">
+
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     APPLICATION CONTAINER
+===================================================== -->
+
+<div class="app-container">
+
+
+    <!-- =================================================
+         SIDEBAR
+    ================================================== -->
+
+    <!-- SIDEBAR -->
+     <aside class="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo-section">
+
+            <div class="logo-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <div>
+
+                <h2>RCS</h2>
+
+                <span>
+                    Retail Compliance Scanner
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <a
+                href="home.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Home
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="staff.html"
+                class="nav-item active"
+            >
+
+                <i class="fa-solid fa-camera"></i>
+
+                <span>
+                    Staff Scanner
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="products.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-box"></i>
+
+                <span>
+                    Products
+                </span>
+
+            </a>
+
+
+
+            <a
+                href="dashboard.html"
+                class="nav-item"
+            >
+
+                <i class="fa-solid fa-chart-line"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+
+        <!-- SIDEBAR FOOTER -->
+
+        <div class="sidebar-footer">
+
+            <div class="sidebar-user">
+
+                <div class="user-icon">
+
+                    <i class="fa-solid fa-user"style="color: black;"></i>
+
+                </div>
+
+                <div>
+
+                     <strong>
+                        Administrator
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+        <header class="topbar">
+
+
+            <div>
+
+                <h1>
+                    Staff Scanner
+                </h1>
+
+                <p>
+                    Check shelf prices and product expiry dates.
+                </p>
+
+            </div>
+
+
+            <!-- USER -->
+
+            <div class="user-area">
+
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+
+                <div class="user-icon">
+                    
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <span>
+                    Store Staff
+                </span>
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             PAGE CONTENT
+        ================================================== -->
+
+        <section class="content-area">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <h1>
+                    Shelf Compliance Scanner
+                </h1>
+
+                <p>
+                    Take a photograph of a product shelf
+                    to check price and expiry compliance.
+                </p>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SCANNER CARD
+            ================================================== -->
+
+            <div class="card scanner-card">
+
+
+                <!-- CARD HEADER -->
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            Scan Product Shelf
+                        </h2>
+
+                        <p>
+                            Upload a clear photograph of
+                            the shelf or shelf label.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     IMAGE UPLOAD
+                ================================================== -->
+
+                <div class="scanner-upload">
+
+
+                    <label
+                        for="shelfImage"
+                        class="upload-box"
+                    >
+
+
+                        <!-- ICON -->
+
+                        <div class="upload-icon">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+
+
+                        <!-- TITLE -->
+
+                        <h3>
+                            Select Shelf Photograph
+                        </h3>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <p>
+                            Click here to choose an image
+                            from your computer or phone.
+                        </p>
+
+
+                        <!-- FILE TYPES -->
+
+                        <span class="upload-note">
+                            JPG, JPEG or PNG
+                        </span>
+
+
+                        <!-- IMPORTANT:
+                             JavaScript searches for
+                             id="shelfImage"
+                        -->
+
+                        <input
+                            type="file"
+                            id="shelfImage"
+                            name="image"
+                            accept="image/*"
+                            capture="environment"
+                        >
+
+
+                    </label>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SCAN BUTTON
+                ================================================== -->
+
+                <div class="scanner-actions">
+
+
+                    <!-- IMPORTANT:
+                         JavaScript searches for
+                         id="scanButton"
+                    -->
+
+                    <button
+                        type="button"
+                        id="scanButton"
+                        class="btn btn-primary scan-button"
+                    >
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        Scan Shelf
+
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     SCAN RESULT
+                ================================================== -->
+
+                <div
+                    id="scanResult"
+                    class="scan-result"
+                >
+
+
+                    <!-- Initial message -->
+
+                    <div class="empty-result">
+
+
+                        <div class="empty-icon">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+
+
+                        <h3>
+                            No Scan Yet
+                        </h3>
+
+
+                        <p>
+                            Select a shelf photograph
+                            and click "Scan Shelf".
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SCANNER INFORMATION
+            ================================================== -->
+
+            <div class="info-grid">
+
+
+                <!-- PRICE CHECK -->
+
+                <div class="info-card">
+
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-barcode"></i>
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Price Verification
+                        </h3>
+
+                        <p>
+                            The shelf price is compared
+                            with the approved product price.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EXPIRY CHECK -->
+
+                <div class="info-card">
+
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-calendar-xmark"></i>
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Expiry Verification
+                        </h3>
+
+                        <p>
+                            The system checks the product
+                            expiry date.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- COMPLIANCE CHECK -->
+
+                <div class="info-card">
+
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-check-circle"></i>
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Compliance Check
+                        </h3>
+
+                        <p>
+                            Pricing and expiry problems
+                            are displayed immediately.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 HOW TO SCAN
+            ================================================== -->
+
+            <div class="card instructions-card">
+
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>
+                            How to Scan
+                        </h2>
+
+                        <p>
+                            Follow these steps for the
+                            best scanning results.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="instruction-grid">
+
+
+                    <div class="instruction">
+
+                        <div class="instruction-number">
+                            1
+                        </div>
+
+                        <h3>
+                            Select Image
+                        </h3>
+
+                        <p>
+                            Take a clear photograph of
+                            the product shelf.
+                        </p>
+
+                    </div>
+
+
+                    <div class="instruction">
+
+                        <div class="instruction-number">
+                            2
+                        </div>
+
+                        <h3>
+                            Check Image
+                        </h3>
+
+                        <p>
+                            Make sure product labels,
+                            prices and dates are visible.
+                        </p>
+
+                    </div>
+
+
+                    <div class="instruction">
+
+                        <div class="instruction-number">
+                            3
+                        </div>
+
+                        <h3>
+                            Start Scan
+                        </h3>
+
+                        <p>
+                            Click the Scan Shelf button.
+                        </p>
+
+                    </div>
+
+
+                    <div class="instruction">
+
+                        <div class="instruction-number">
+                            4
+                        </div>
+
+                        <h3>
+                            Review Result
+                        </h3>
+
+                        <p>
+                            Review the compliance status
+                            returned by the system.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+
+<!-- =====================================================
+     STAFF SCANNER JAVASCRIPT
+===================================================== -->
+
+
+<script src="js/api.js"></script>
+
+
+</body>
+
+</html>
